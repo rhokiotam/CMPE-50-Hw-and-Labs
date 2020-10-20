@@ -21,5 +21,5 @@ int main()
             x = 1 + rand() % 13;  // Note: 1+rand()%6 is biased
         cout << x << ' ';
     }
-
+   
 }
