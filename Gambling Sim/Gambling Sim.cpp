@@ -2,24 +2,62 @@
 //
 
 #include <iostream>
-//#include <cstdlib>
-//#include <ctime>
+#include <cstdlib>
+#include <ctime>
 #include <random>
-//#define RAND_MAX 13
 using namespace std;
+class blackJack
+{
+private:
+    int cards[2];
+    int nextdeal;
+public:
+    blackJack()
+    {
+        cards[2] = { 0 };
+        nextdeal = 0;
+    }
+    void deal()
+    {
+        int cards[2];
+        for (int n = 0; n < 2; ++n)
+        {
+            cards[n] = (rand() % 13);
+            cout << cards[n] << " ";
+        }
+    }
+    void addCard()
+    {
+
+    }
+};
 int main()
 {
-    /*
-    srand(time(nullptr));
-    int random_variable = rand();
-    cout << "Random value on [0 " << RAND_MAX << "]: ";
-    cout << random_variable << "\n";
-    */
-    for (int n = 0; n != 2; ++n) {
-        int x = 14;
-        while (x > 13)
-            x = 1 + rand() % 13;  // Note: 1+rand()%6 is biased
-        cout << x << ' ';
+    cout << "Blackjack Gambling Sim\n";
+    int money;
+    money = 10;
+    cout << "You have $" << money << ". How much do you want to bet?\n";
+    int bet = 0;
+    cout << "1) $1\n" << "2) $5\n" << "3) $10\n" << "4) $1000\n" << "5) Double or nothing\n";
+    cin >> bet;
+    if (bet == 1)
+    {
+    
     }
-   
+    else if (bet == 2)
+    {
+       
+    }
+    else if (bet == 3)
+    {
+       
+    }
+    else if (bet == 4)
+    {
+       
+    }
+    else
+    {
+       
+    }
 }
