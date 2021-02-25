@@ -22,6 +22,6 @@ public:
 private:    
 	string name;    
 	string ssn;    
-	double net_pay;};
+	double net_pay;
 
 #endif //EMPLOYEE_H
